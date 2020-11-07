@@ -1,5 +1,6 @@
 import React from "react";
 import Child from "./Child";
+import Article from "./Article"
 import { connect } from "react-redux";
 
 function toInput(payload) {
@@ -37,6 +38,7 @@ const Counter = ({ value, toInput }) => {
         onChange={(e) => toInput(e.target.value)}
       />
       <Child />
+      <Article/>
     </>
   );
 };
